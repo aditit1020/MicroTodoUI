@@ -12,10 +12,10 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      IMAGE_NAME: todo-ui
+      IMAGE_NAME: appadi-ui
       IMAGE_TAG: v4
-      ACR_NAME: devopsinsidersacr235
-      ACR_LOGIN_SERVER: devopsinsidersacr235.azurecr.io
+      ACR_NAME: acrdevAppAdi
+      ACR_LOGIN_SERVER: acrdevAppAdi.azurecr.io
 
     steps:
       - name: Checkout code
@@ -24,9 +24,9 @@ jobs:
       - name: Azure Login
         uses: Azure/login@v2.3.0
         with:
-          client-id: ff27bcf6-f60c-4a57-8b01-8eee5de2a9cd
-          tenant-id: 0f7010fd-209e-4344-8457-043ffb37143b
-          subscription-id: 1075ec7a-b17a-4f37-bf3f-9d68c4506dc1
+          client-id: f32e1389-6220-4530-8c56-0636be75cf39
+          tenant-id: 37e7fdb4-65d9-4a70-9773-6c7724c23bb8
+          subscription-id: f5e186f5-0eba-4768-80ed-32e05f166b3b
 
       - name: Log in to ACR
         run: |

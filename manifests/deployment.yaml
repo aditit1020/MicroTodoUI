@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: todo-ui
+  name: appadi-ui
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: todo-ui
+      app: appadi-ui
   template:
     metadata:
       labels:
-        app: todo-ui
+        app: appadi-ui
     spec:
       containers:
-      - name: todo-ui
-        image: devopsinsidersacr235.azurecr.io/todo-ui:v4
+      - name: appadi-ui
+        image: acrdevAppAdi.azurecr.io/appadi-ui:v4
         ports:
         - containerPort: 80

@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: todo-ui
+  name: appadi-ui
 spec:
   type: ClusterIP
   selector:
-    app: todo-ui
+    app: appadi-ui
   ports:
     - port: 80
       targetPort: 80
