@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: appadi-ui
-        image: acrdevAppAdi.azurecr.io/appadi-ui:v4
+        image: acrdevappadi01.azurecr.io/appadi-ui:v4
         ports:
         - containerPort: 80
